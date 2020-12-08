@@ -3,6 +3,8 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use ieee.std_logic_unsigned.all;
 
+use work.led_matrix_controller.all;
+
 
 entity led_controller is
     port (
@@ -19,7 +21,7 @@ entity led_controller is
        ram_data     : in std_logic_vector(RAM_DATA_WIDTH-1 downto 0);
 
        rom_addr     : out std_logic_vector(ROM_ADDR_WIDTH-1 downto 0);
-       rom_data     : in std_logic_vector(ROM_DATA_WIDTH-1 downto 0);
+       rom_data     : in std_logic_vector(ROM_DATA_WIDTH-1 downto 0)
     );
 end led_controller;
 
@@ -105,6 +107,7 @@ begin
             when INCR_RAM_DATA => 
                 next_addr   <= (next_addr + 1) mod MAX_RAM_ADDR;
                 next_state  <=  READ_DATA;
+        end case;
         
     end process;
 

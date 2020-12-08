@@ -14,4 +14,4 @@ package led_matrix_controller is
    constant MAX_LED_COLUMN      : integer := 4; -- Number of columns in LED Matrix
    constant MAX_RAM_ADDR        : integer := 1; -- How many letters should show up
     
-end led_controller;
+end led_matrix_controller;

@@ -2,7 +2,7 @@ library ieee;
 use ieee.math_real.log2;
 use ieee.math_real.ceil;
 
-package led_controller is
+package led_matrix_controller is
     
     -- User configurable constants
     constant RAM_DATA_WIDTH     : integer := 8; -- data width of ram

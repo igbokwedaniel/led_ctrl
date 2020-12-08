@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use ieee.std_logic_unsigned.all;
 
-
+use work.led_matrix_controller.all;
 entity ram is
     port (
         rst    : in  std_logic;

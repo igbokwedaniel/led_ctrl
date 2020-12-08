@@ -2,6 +2,8 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
+use work.led_matrix_controller.all;
+
 entity single_port_rom is
 
 	port

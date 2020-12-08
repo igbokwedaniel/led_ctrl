@@ -6,7 +6,7 @@ entity single_port_rom is
 
 	port
 	(
-		addr	: IN 	STD_LOGIC_VECTOR(ROM_ADDR_SIZE-1 DOWNTO 0);
+		addr	: IN 	STD_LOGIC_VECTOR(ROM_ADDR_WIDTH-1 DOWNTO 0);
 		clk		: IN 	STD_LOGIC;
 		q		: OUT 	STD_LOGIC_VECTOR(ROM_DATA_WIDTH-1 DOWNTO 0);
 	);
